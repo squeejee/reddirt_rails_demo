@@ -1,0 +1,29 @@
+* Fork http://github.com/squeejee/reddirt_rails_demo
+
+* git clone <your forked repo>
+
+* git checkout -b moonshine
+
+* git pull moonshine
+
+* Edit 'config/deploy.rb' 
+  * Change server name
+
+* Edit 'config/moonshine.yml'
+  * Change :repository
+  * Change :domain to your domain name
+    * Edit "/etc/hosts"
+    * e.g.  "173.203.223.193  reddirt.squeejee.local"
+
+* git commit -am "Moonshine config updates"
+* git push origin moonshine
+
+* cap deploy:setup
+
+* Generate ssh key and add to GitHub User account
+  * ssh rails@<ip address>
+  * ssh-keygen
+  * cat ~/.ssh/id_rsa.pub 
+  * Add this key to your GitHub user account on http://github.com/account -> SSH Public Keys:  
+
+* cap deploy
