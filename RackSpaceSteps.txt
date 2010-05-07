@@ -1,3 +1,11 @@
+Available Server IPs:
+173.203.223.215
+173.203.223.216
+173.203.223.217
+173.203.223.219
+173.203.223.220
+173.203.223.221
+
 * Fork http://github.com/squeejee/reddirt_rails_demo
 
 * git clone <your forked repo>
@@ -10,10 +18,9 @@
   * Change server name
 
 * Edit 'config/moonshine.yml'
-  * Change :repository
-  * Change :domain to your domain name
-    * Edit "/etc/hosts"
-    * e.g.  "173.203.223.193  reddirt.squeejee.local"
+  * Update :domain to your domain name
+  * Update :repository to your github repo
+  * Update :application to your app name
 
 * git commit -am "Moonshine config updates"
 * git push origin moonshine
@@ -24,6 +31,6 @@
   * ssh rails@<ip address>
   * ssh-keygen
   * cat ~/.ssh/id_rsa.pub 
-  * Add this key to your GitHub user account on http://github.com/account -> SSH Public Keys:  
+  * Add this key to your GitHub user account on http://github.com/account -> SSH Public Keys
 
 * cap deploy
